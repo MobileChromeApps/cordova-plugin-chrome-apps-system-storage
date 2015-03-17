@@ -52,6 +52,8 @@ The API reference is [here](https://developer.chrome.com/apps/system_storage).
 
 # Release Notes
 
+## 1.2.1 (Mar 17, 2015)
+* Remove version constraint on backgroundapp dependency due to plugman bug CB-8696
 
 ## 1.2.0 (Mar 17, 2015)
 * Use `org.chromium.backgroundapp` to handle background events
