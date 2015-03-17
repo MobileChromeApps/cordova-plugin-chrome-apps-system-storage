@@ -52,6 +52,10 @@ The API reference is [here](https://developer.chrome.com/apps/system_storage).
 
 # Release Notes
 
+
+## 1.2.0 (Mar 17, 2015)
+* Use `org.chromium.backgroundapp` to handle background events
+
 ## 1.1.2 (Nov 26, 2014)
 * Make Java 1.6 compatible
 
