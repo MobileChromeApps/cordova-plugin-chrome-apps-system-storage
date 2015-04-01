@@ -10,11 +10,11 @@ chrome.system.storage.onDetached.addListener(function(id) {
   logger('onDetached fired. id = ' + id);
 });
 
-registerManualTests('chrome.system.storage', function(rootEl, addButton) {
+exports.defineManualTests = function(rootEl, addButton) {
 
   addButton('Get Storage Info', function() {
     chrome.system.storage.getInfo(function(storageInfo) {
       logger(JSON.stringify(storageInfo, null, 4));
     });
   });
-});
+};
