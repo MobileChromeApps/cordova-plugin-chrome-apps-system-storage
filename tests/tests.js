@@ -2,9 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-/* global logger */
-/* global jasmine */
-
 chrome.system.storage.onAttached.addListener(function(info) {
   logger('onAttached fired. info = ' + JSON.stringify(info, null, 4));
 });
@@ -24,6 +21,8 @@ exports.defineManualTests = function(rootEl, addButton) {
 
 exports.defineAutoTests = function() {
   'use strict';
+
+  require('cordova-plugin-chrome-apps-test-framework.jasmine_helpers').addJasmineHelpers();
 
   var customMatchers = {
 
