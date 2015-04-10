@@ -2,12 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-chrome.system.storage.onAttached.addListener(function(info) {
-  logger('onAttached fired. info = ' + JSON.stringify(info, null, 4));
-});
+// As this file is run at app startup, wait for deviceready before
+// using any plugin APIs
+document.addEventListener("deviceready", function() {
 
-chrome.system.storage.onDetached.addListener(function(id) {
-  logger('onDetached fired. id = ' + id);
+  chrome.system.storage.onAttached.addListener(function(info) {
+    console.log('onAttached fired. info = ' + JSON.stringify(info, null, 4));
+  });
+
+  chrome.system.storage.onDetached.addListener(function(id) {
+    console.log('onDetached fired. id = ' + id);
+  });
 });
 
 exports.defineManualTests = function(rootEl, addButton) {
