@@ -19,7 +19,7 @@ exports.defineManualTests = function(rootEl, addButton) {
 
   addButton('Get Storage Info', function() {
     chrome.system.storage.getInfo(function(storageInfo) {
-      logger(JSON.stringify(storageInfo, null, 4));
+      console.log(JSON.stringify(storageInfo, null, 4));
     });
   });
 };
