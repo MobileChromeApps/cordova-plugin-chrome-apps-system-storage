@@ -31,9 +31,7 @@ typedef enum {Total, Available} CapacityType;
 
 - (void)pluginInitialize
 {
-    if (_builtinStorageId == nil) {
-        _builtinStorageId = [[NSUUID UUID] UUIDString];
-    }
+    _builtinStorageId = [[NSUUID UUID] UUIDString];
 }
 
 - (NSString*)builtInStorageId
