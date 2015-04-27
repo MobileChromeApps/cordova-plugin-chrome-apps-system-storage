@@ -16,14 +16,14 @@
   <repo>https://github.com/MobileChromeApps/mobile-chrome-apps.git</repo>
   <issue>https://github.com/MobileChromeApps/mobile-chrome-apps/issues</issue>
 
-  <dependency id="org.chromium.common" />
+  <dependency id="cordova-plugin-chrome-apps-common" />
 
   <js-module src="system.storage.js" name="system.storage">
     <clobbers target="chrome.system.storage" />
   </js-module>
 
   <platform name="android">
-    <dependency id="org.chromium.backgroundapp" />
+    <dependency id="cordova-plugin-background-app" />
     <framework src="com.android.support:support-v4:+" />
 
     <source-file src="src/android/ChromeSystemStorage.java" target-dir="src/org/chromium" />
