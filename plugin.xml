@@ -8,7 +8,7 @@
     id="org.chromium.system.storage"
     version="1.2.2-dev">
   <engines>
-    <engine name="cordova" version=">=3.0.0" />
+    <engine name="cordova-android" version=">=4" />
   </engines>
 
   <name>Chrome System Storage API</name>
@@ -16,7 +16,6 @@
   <repo>https://github.com/MobileChromeApps/mobile-chrome-apps.git</repo>
   <issue>https://github.com/MobileChromeApps/mobile-chrome-apps/issues</issue>
 
-  <dependency id="android.support.v4" />
   <dependency id="org.chromium.common" />
 
   <js-module src="system.storage.js" name="system.storage">
@@ -25,6 +24,7 @@
 
   <platform name="android">
     <dependency id="org.chromium.backgroundapp" />
+    <framework src="com.android.support:support-v4:+" />
 
     <source-file src="src/android/ChromeSystemStorage.java" target-dir="src/org/chromium" />
     <source-file src="src/android/ChromeSystemStorageReceiver.java" target-dir="src/org/chromium" />
