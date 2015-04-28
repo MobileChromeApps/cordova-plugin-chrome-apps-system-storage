@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 var exec = require('cordova/exec');
-var Event = require('org.chromium.common.events');
+var Event = require('cordova-plugin-chrome-apps-common.events');
 var channel = require('cordova/channel');
-var helpers = require('org.chromium.common.helpers');
+var helpers = require('cordova-plugin-chrome-apps-common.helpers');
 var eventsToFireOnStartUp = [];
 
 exports.getInfo = function(callback) {
