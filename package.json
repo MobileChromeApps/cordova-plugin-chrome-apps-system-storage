@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-chrome-apps-system-storage",
+  "version": "1.2.2-dev",
+  "description": "This plugin provides the ability to query storage device information and be notified when a removable storage device is attached and detached.",
+  "cordova": {
+    "id": "cordova-plugin-chrome-apps-system-storage",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-system-storage.git"
+  },
+  "keywords": [
+    "chrome",
+    "system",
+    "storage",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4"
+    }
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-system-storage/issues"
+  },
+  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-system-storage"
+}
