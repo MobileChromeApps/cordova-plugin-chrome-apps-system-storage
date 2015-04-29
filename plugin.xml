@@ -13,8 +13,8 @@
 
   <name>Chrome System Storage API</name>
   <keywords>chrome,system,storage</keywords>
-  <repo>https://github.com/MobileChromeApps/mobile-chrome-apps.git</repo>
-  <issue>https://github.com/MobileChromeApps/mobile-chrome-apps/issues</issue>
+  <repo>https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-system-storage.git</repo>
+  <issue>https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-system-storage/issues</issue>
 
   <dependency id="cordova-plugin-chrome-apps-common" />
 
