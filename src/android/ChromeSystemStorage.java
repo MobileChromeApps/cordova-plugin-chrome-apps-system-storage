@@ -103,7 +103,7 @@ public class ChromeSystemStorage extends CordovaPlugin {
 
                 message.put("action", attached ? "attached" : "detached");
                 message.put("id", unitId);
-                if (attached) {
+                if (attached && attachedStorage != null) {
                     JSONObject storageUnit = plugin.buildExternalStorageUnitInfo(attachedStorage);
 
                     message.put("info", storageUnit);
